@@ -1,0 +1,3 @@
+packages:
+  # todos os pacotes em subdiretórios diretos de packages/
+  - 'packages/*'
