@@ -1,11 +1,17 @@
-import { ComponentProps } from 'react'
+import { ElementType, HTMLAttributes } from 'react'
 
-export type BoxProps = ComponentProps<'div'>
+import { twMerge } from 'tailwind-merge'
 
-export function Box(props: BoxProps) {
+export type BoxProps = HTMLAttributes<HTMLOrSVGElement> & {
+  as?: ElementType
+}
+export function Box({ className, as: Tag = 'div', ...props }: BoxProps) {
   return (
-    <div
-      className="p-4 rounded-md border border-gray-600 bg-gray-800"
+    <Tag
+      className={twMerge(
+        'p-4 rounded-md border border-gray-600 bg-gray-800',
+        className,
+      )}
       {...props}
     />
   )

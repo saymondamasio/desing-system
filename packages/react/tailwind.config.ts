@@ -1,4 +1,5 @@
 import { Config } from 'tailwindcss'
+import plugin from 'tailwindcss/plugin'
 import {
   colors,
   fontSizes,
