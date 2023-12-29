@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build",
+    "deploy-storybook": "storybook-to-ghpages",
     "lint": "eslint src/**/*.{ts,tsx} --fix"
   },
   "dependencies": {
@@ -21,12 +22,14 @@
     "@storybook/addon-essentials": "^7.6.6",
     "@storybook/addon-interactions": "^7.6.6",
     "@storybook/addon-links": "^7.6.6",
-    "@storybook/addon-onboarding": "^1.0.10",
     "@storybook/addon-styling-webpack": "^0.0.5",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/addon-a11y": "^7.6.6",
     "@storybook/addon-themes": "^7.6.6",
     "@storybook/blocks": "^7.6.6",
     "@storybook/react": "^7.6.6",
     "@storybook/react-vite": "^7.6.6",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/test": "^7.6.6",
     "@storybook/theming": "^7.6.6",
     "@types/react": "^18.2.43",

@@ -17,7 +17,8 @@ const config: StorybookConfig = {
     getAbsolutePath("@storybook/addon-onboarding"),
     getAbsolutePath("@storybook/addon-interactions"),
     "@storybook/addon-styling-webpack",
-    "@storybook/addon-themes"
+    "@storybook/addon-themes",
+    "@storybook/addon-a11y"
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
