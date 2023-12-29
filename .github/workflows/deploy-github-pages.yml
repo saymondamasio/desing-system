@@ -33,10 +33,24 @@ jobs:
         with:
             version: 8
             run_install: false
+      
+  
+      - name: Install dependencies
+        run: pnpm i
+  
+      - name: Build
+        run: pnpm build
+  
+      - name: Build Storybook
+        working-directory: ./packages/docs
+        run: pnpm build
 
-      #👇 Add Storybook build and deploy to GitHub Pages as a step in the workflow
-      - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.1
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          install_command: pnpm i && pnpm build # default: npm ci
-          build_command: cd ./packages/docs && touch storybook-static/.nojekyll && pnpm build-storybook
-          path: ./packages/docs/storybook-static # default: dist/storybook
+          path: "./packages/docs/storybook-static"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
