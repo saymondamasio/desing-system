@@ -39,4 +39,4 @@ jobs:
         with:
           install_command: pnpm i && pnpm build # default: npm ci
           build_command: cd ./packages/docs && touch storybook-static/.nojekyll && pnpm build-storybook
-          path: storybook-static # default: dist/storybook
+          path: ./packages/docsstorybook-static # default: dist/storybook
