@@ -9,6 +9,15 @@ const meta: Meta<typeof Avatar> = {
     src: 'https://github.com/saymondamasio.png',
     alt: 'Saymon Damásio',
   },
+  tags: ['autodocs'],
+  argTypes: {
+    src: {
+      description: 'Source of the image',
+      control: {
+        type: 'text',
+      },
+    },
+  },
 }
 
 export default meta

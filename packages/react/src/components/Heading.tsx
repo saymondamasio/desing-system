@@ -8,8 +8,7 @@ const heading = tv({
     size: {
       sm: 'text-xl',
       md: 'text-2xl',
-      lg: 'text-3xl',
-      xl: 'text-4xl',
+      lg: 'text-4xl',
       '2xl': 'text-5xl',
       '3xl': 'text-6xl',
       '4xl': 'text-7xl',

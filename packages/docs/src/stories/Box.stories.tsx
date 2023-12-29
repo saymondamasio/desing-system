@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 
 const meta: Meta<typeof Box> = {
   title: 'Surfaces/Box',
+  tags: ['autodocs'],
   component: Box,
   args: {
     children: (
@@ -16,6 +17,13 @@ const meta: Meta<typeof Box> = {
         </Text>
       </>
     ),
+  },
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
   },
 }
 
