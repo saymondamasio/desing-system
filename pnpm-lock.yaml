@@ -26,9 +26,6 @@ importers:
       '@damasio-ui/ts-config':
         specifier: '*'
         version: link:../ts-config
-      '@storybook/addon-a11y':
-        specifier: ^7.6.6
-        version: 7.6.6
       phosphor-react:
         specifier: ^1.4.1
         version: 1.4.1(react@18.2.0)
@@ -39,6 +36,9 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
+      '@storybook/addon-a11y':
+        specifier: ^7.6.6
+        version: 7.6.6
       '@storybook/addon-essentials':
         specifier: ^7.6.6
         version: 7.6.6(@types/react-dom@18.2.18)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)
@@ -2995,7 +2995,7 @@ packages:
     dependencies:
       '@storybook/addon-highlight': 7.6.6
       axe-core: 4.7.0
-    dev: false
+    dev: true
 
   /@storybook/addon-actions@7.6.6:
     resolution: {integrity: sha512-mLJip9Evb2Chj7ymKbpaybe5NgDy3Du7oSWeURPy/0qXJ2cBqHWnhZ8CTK2DasrstsUhQSJaZVXHhaENT+fn+g==}
@@ -3098,6 +3098,7 @@ packages:
     resolution: {integrity: sha512-B85UaCts2uMpa0yHBSnupzy2WCdW4vfB+lfaBug9beyOyZQdel07BumblE0KwSJftYgdCNPUZ5MRlqEDzMLTWQ==}
     dependencies:
       '@storybook/global': 5.0.0
+    dev: true
 
   /@storybook/addon-interactions@7.6.6:
     resolution: {integrity: sha512-EJWx6ciJPgv1c75tB/M4smWDpPDGM/L24v4DZxGpl1eV3oQOSQCKImG5btwoy6QcIi68ozroUHdUti/kzCKS1w==}
@@ -3543,6 +3544,7 @@ packages:
 
   /@storybook/global@5.0.0:
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
+    dev: true
 
   /@storybook/instrumenter@7.6.6:
     resolution: {integrity: sha512-6ayPMM3wBv3zFPLO7FqJRD13w011iw2MC1sbDAPceQ7YIWs+gr0C2uEwAYF30VUi4qT/xy0erVGHe/eSDEJ8mg==}
@@ -5008,6 +5010,7 @@ packages:
   /axe-core@4.7.0:
     resolution: {integrity: sha512-M0JtH+hlOL5pLQwHOLNYZaXuhqmvS8oExsqB1SBYgA4Dk7u/xx+YdGHXaK5pyUfed5mYXdlYiphWq3G8cRi5JQ==}
     engines: {node: '>=4'}
+    dev: true
 
   /axobject-query@3.2.1:
     resolution: {integrity: sha512-jsyHu61e6N4Vbz/v18DHwWYKK0bSWLqn47eeDSKPB7m8tqMHF9YJ+mhIk2lVteyZrY8tnSj/jHOv4YiTCuCJgg==}
