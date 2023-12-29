@@ -1,0 +1,3 @@
+import{j as s}from"./jsx-runtime-vNq4Oc-g.js";import{C as m,B as c,T as p}from"./index-A5Z77faq.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./extends-dGVwEr9R.js";import"./index-jmm5gWkb.js";const u={title:"Form/Checkbox",component:m,tags:["autodocs"],args:{},decorators:[t=>s.jsxs(c,{as:"label",className:"flex gap-2",children:[s.jsx(t,{}),s.jsx(p,{size:"sm",children:"Accept terms"})]})]},r={args:{}};var e,o,a;r.parameters={...r.parameters,docs:{...(e=r.parameters)==null?void 0:e.docs,source:{originalSource:`{
+  args: {}
+}`,...(a=(o=r.parameters)==null?void 0:o.docs)==null?void 0:a.source}}};const j=["Primary"];export{r as Primary,j as __namedExportsOrder,u as default};
