@@ -38,5 +38,5 @@ jobs:
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.1
         with:
           install_command: pnpm i && pnpm build # default: npm ci
-          build_command: cd ./packages/docs && touch storybook-static/.nojekyll && pnpm i build-storybook # default: npm run build-storybook
+          build_command: cd ./packages/docs && touch storybook-static/.nojekyll && pnpm build-storybook
           path: storybook-static # default: dist/storybook
