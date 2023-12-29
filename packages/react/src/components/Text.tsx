@@ -31,6 +31,6 @@ export type TextProps = HTMLAttributes<HTMLOrSVGElement> &
     as?: ElementType
   }
 
-export function Text({ size, as: Tag = 'p', ...props }: TextProps) {
-  return <Tag className={text({ size })} {...props} />
+export function Text({ size, as: Tag = 'p', className, ...props }: TextProps) {
+  return <Tag className={text({ size, className })} {...props} />
 }
