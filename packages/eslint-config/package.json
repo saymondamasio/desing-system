@@ -2,6 +2,7 @@
   "private": true,
   "name": "@damasio-ui/eslint-config",
   "main": "index.js",
+  "version": "1.0.0",
   "license": "ISC",
   "devDependencies": {
     "@saymondamasio/eslint-config": "^1.1.2",
