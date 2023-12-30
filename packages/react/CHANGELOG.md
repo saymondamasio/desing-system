@@ -1,5 +1,11 @@
 # @damasio-ui/react
 
+## 2.2.0
+
+### Minor Changes
+
+- 2d4de83: revert export theme
+
 ## 2.1.0
 
 ### Minor Changes
