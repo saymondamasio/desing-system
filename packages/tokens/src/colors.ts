@@ -19,6 +19,4 @@ export const colors = {
     700: '#015F43',
     900: '#00291D',
   },
-
-  test: '#ccc',
 }

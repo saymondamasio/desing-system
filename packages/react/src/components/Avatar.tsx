@@ -8,7 +8,7 @@ export type AvatarProps = ComponentProps<typeof AvatarPrimitive.AvatarImage>
 
 export function Avatar(props: AvatarProps) {
   return (
-    <AvatarPrimitive.Root className="rounded-full inline-block size-12 overflow-hidden">
+    <AvatarPrimitive.Root className="rounded-full inline-block size-16 overflow-hidden">
       <AvatarPrimitive.Image
         className="size-full object-cover rounded-full"
         {...props}

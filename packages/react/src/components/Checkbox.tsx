@@ -7,7 +7,7 @@ export type CheckboxProps = ComponentProps<typeof CheckboxPrimitive.Root>
 export function Checkbox(props: CheckboxProps) {
   return (
     <CheckboxPrimitive.Root
-      className="size-6 bg-gray-900 border-2 border-gray-900 rounded-xs overflow-hidden flex justify-center items-center focus:border-ignite-300 data-[state=checked]:bg-ignite-300 [state=checked]:border-ignite-300 "
+      className="size-6 bg-gray-900 border-2 border-gray-900 rounded-xs overflow-hidden flex justify-center items-center focus:border-ignite-300 data-[state=checked]:bg-ignite-300 data-[state=checked]:border-ignite-300"
       {...props}
     >
       <CheckboxPrimitive.Indicator

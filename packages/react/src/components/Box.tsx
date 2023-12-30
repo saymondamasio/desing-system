@@ -9,7 +9,7 @@ export function Box({ className, as: Tag = 'div', ...props }: BoxProps) {
   return (
     <Tag
       className={twMerge(
-        'p-4 rounded-md border border-gray-600 bg-gray-800',
+        'p-6 rounded-md border border-gray-600 bg-gray-800',
         className,
       )}
       {...props}
