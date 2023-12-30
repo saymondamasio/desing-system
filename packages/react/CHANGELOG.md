@@ -1,5 +1,11 @@
 # @damasio-ui/react
 
+## 2.2.1
+
+### Patch Changes
+
+- move tokens dependency to dependencies
+
 ## 2.2.0
 
 ### Minor Changes

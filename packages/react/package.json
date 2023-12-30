@@ -1,6 +1,6 @@
 {
   "name": "@damasio-ui/react",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -15,7 +15,6 @@
   "license": "ISC",
   "devDependencies": {
     "@damasio-ui/eslint-config": "*",
-    "@damasio-ui/tokens": "*",
     "@damasio-ui/ts-config": "*",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
@@ -29,6 +28,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@damasio-ui/tokens": "*",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-checkbox": "^1.0.4",
     "phosphor-react": "^1.4.1",
