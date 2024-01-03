@@ -4,15 +4,33 @@
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
+  
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tailwindcss -i ./src/index.css -o ./dist/output.css && tsup src/index.tsx --format esm, cjs --dts --external react",
-    "dev": "concurrently --kill-others \"tailwindcss -i ./src/index.css -o ./dist/output.css --watch \" \"tsup src/index.tsx --format esm, cjs --dts --external react --watch\"",
+    "build": "tailwindcss -i ./src/index.css -o ./dist/output.css && tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "concurrently --kill-others \"tailwindcss -i ./src/index.css -o ./dist/output.css --watch \" \"tsup src/index.tsx --format esm,cjs --dts --external react --watch\"",
     "lint": "eslint src/**/*.{ts,tsx} --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "files": [
+    "dist/**"
+  ],
+  "exports": {
+    "./*": {
+      "default": "./src/components/*.tsx"
+    },
+    ".": {
+      "default": "./src/index.tsx"
+    },
+    "./tailwind.config": {
+      "default": "./tailwind.config.ts"
+    },
+    "./dist/*": {
+      "default": "./dist/*"
+    }
+  },
   "devDependencies": {
     "@damasio-ui/eslint-config": "*",
     "@damasio-ui/ts-config": "*",
